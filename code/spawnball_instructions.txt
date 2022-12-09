@@ -1,0 +1,14 @@
+How to spawn ball
+
+export ROS_HOSTNAME=localhost
+export ROS_MASTER_URI=http://localhost:11311
+
+roscore
+
+THEN IN ANOTHER TERMINAL
+
+rosrun gazebo_ros gazebo
+
+THEN IN ANOTHER TERMINAL
+
+python3 spawnball.py

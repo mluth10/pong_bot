@@ -1,0 +1,19 @@
+final_assembly_backup_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  pan_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: pan
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  tilt_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: tilt
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  slider_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: slider
+    pid: {p: 100.0, i: 0.01, d: 10.0}

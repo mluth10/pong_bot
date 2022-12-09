@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<robot name="final_assembly_backup" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find final_assembly_backup_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find final_assembly_backup_description)/urdf/final_assembly_backup.trans" />
+<xacro:include filename="$(find final_assembly_backup_description)/urdf/final_assembly_backup.gazebo" />
+<link name="dummy"></link>
+<link name="base_link">
+  <inertial>
+    <origin xyz="-2.075045481070518e-15 -7.180088169794181e-18 0.0025357142857142874" rpy="0 0 0"/>
+    <mass value="1.07768373234164162"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_1_1">
+  <inertial>
+    <origin xyz="-1.2147925997531403e-07 -5.320834928309803e-08 0.016745112993794938" rpy="0 0 0"/>
+    <mass value="1.17935029502345723"/>
+    <inertia ixx="2.9e-05" iyy="3e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.007" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.007" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2_1">
+  <inertial>
+    <origin xyz="0.010000700001060087 -0.0009384679011191495 0.020424513745170826" rpy="0 0 0"/>
+    <mass value="0.12678657059716397"/>
+    <inertia ixx="6e-05" iyy="6.3e-05" izz="1.6e-05" ixy="-0.0" iyz="2e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01 -0.0 -0.055653" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01 -0.0 -0.055653" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="prismatic_slider_1">
+  <inertial>
+    <origin xyz="1.0700040768405487e-17 0.003762714426131724 0.0025003994585711536" rpy="0 0 0"/>
+    <mass value="0.024201927964220705"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.001554 -0.069653" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/prismatic_slider_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.001554 -0.069653" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://final_assembly_backup_description/meshes/prismatic_slider_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="dummy_joint" type="fixed">
+  <parent link="dummy"/>
+  <child link="base_link"/>
+</joint>
+
+<joint name="pan" type="continuous">
+  <origin xyz="0.0 0.0 0.007" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link_1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="tilt" type="revolute">
+  <origin xyz="-0.01 0.0 0.048653" rpy="0 0 0"/>
+  <parent link="link_1_1"/>
+  <child link="link_2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="slider" type="prismatic">
+  <origin xyz="0.01 0.001554 0.014" rpy="0 0 0"/>
+  <parent link="link_2_1"/>
+  <child link="prismatic_slider_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="0.04" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>

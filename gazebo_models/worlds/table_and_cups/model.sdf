@@ -1,0 +1,704 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='third_full_pong'>
+    <model name='first_full_pong'>
+      <model name='plastic_cup'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.111861 -0.12665 0.09322 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.113573 -0.044904 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_0'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.11596 0.037161 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_1'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.117274 0.119285 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_2'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>0.024979 -0.042903 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_3'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.0405 -0.085417 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_4'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.044403 -0.003103 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_5'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-0.047829 0.081936 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_6'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>0.02088 0.040894 0.093217 0 -0 0</pose>
+      </model>
+      <model name='plastic_cup_clone_7'>
+        <link name='link'>
+          <pose>0 0 0.065 0 -0 0</pose>
+          <inertial>
+            <mass>0.0599</mass>
+            <inertia>
+              <ixx>0.000302896</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.000302896</iyy>
+              <iyz>0</iyz>
+              <izz>3.28764e-05</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.35</poissons_ratio>
+                <elastic_modulus>3.10264e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://plastic_cup/meshes/plastic_cup.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/GreyTransparent</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>0.089903 0.001537 0.093217 0 -0 0</pose>
+      </model>
+      <model name='table'>
+        <static>1</static>
+        <link name='link'>
+          <collision name='surface'>
+            <pose>0 0 1 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>1.5 0.8 0.03</size>
+              </box>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.6</mu>
+                  <mu2>0.6</mu2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual1'>
+            <pose>0 0 1 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>1.5 0.8 0.03</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='front_left_leg'>
+            <pose>0.68 0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <visual name='front_left_leg'>
+            <pose>0.68 0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='front_right_leg'>
+            <pose>0.68 -0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <visual name='front_right_leg'>
+            <pose>0.68 -0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='back_right_leg'>
+            <pose>-0.68 -0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <visual name='back_right_leg'>
+            <pose>-0.68 -0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='back_left_leg'>
+            <pose>-0.68 0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <visual name='back_left_leg'>
+            <pose>-0.68 0.38 0.5 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.02</radius>
+                <length>1</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>0.455637 0.022164 -0.932173 0 -0 0</pose>
+      </model>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>0 0 -0 0 -0 0</pose>
+    </model>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
